@@ -1,5 +1,6 @@
 # Welcome to Roam42
-A delightfully fun and powerful collection of power user tools for Roam by https://roamresearch.com/
+
+A delightfully fun and powerful collection of power user tools for Roam by <https://roamresearch.com/>
 
 This project was first started by [RoamHacker](https://twitter.com/roamhacker) and passed over to RoamJS on 04/20/2021. We are deeply appreciative of all of RoamHacker's hard work and generosity.
 
@@ -9,7 +10,20 @@ For more information, go to this page:
 * [SmartBlocks Builders Guide](https://roamresearch.com/#/app/roamhacker/page/GH0401tnt)
 * [workBench User's Guide](https://roamresearch.com/#/app/roamhacker/page/bBvLjvSGT)
 
-# Credits
+## Development
+
+### Install Requirements
+
+```bash
+yarn
+```
+
+### Cypress
+
+Check out the [README.md](./cypress/README.md) Cypress.
+
+## Credits
+
 Roam42 is built on the open-source work of other greater coders.
 We are so thankful to them for their contributions to the community
 and also for sharing their work. I want to acknowledge them here:

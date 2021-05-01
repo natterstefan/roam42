@@ -1,0 +1,31 @@
+{
+  "name": "roam42",
+  "version": "0.0.1",
+  "description": "A delightfully fun and powerful collection of power user tools for Roam by https://roamresearch.com/",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "cypress:open": "start-server-and-test 'npx serve .' http://localhost:5000 'cypress open'",
+    "cypress:run": "start-server-and-test 'npx serve .' http://localhost:5000  'cypress run'",
+    "prepare": "node ./scripts/copyfiles.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natterstefan/roam42.git"
+  },
+  "author": "Stefan Natter (https://natterstefan.me)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/natterstefan/roam42/issues"
+  },
+  "homepage": "https://github.com/natterstefan/roam42#readme",
+  "devDependencies": {
+    "@testing-library/cypress": "^7.0.6",
+    "cypress": "^7.2.0",
+    "cypress-wait-until": "^1.7.1",
+    "dotenv": "^8.2.0",
+    "start-server-and-test": "^1.12.1",
+    "typescript": "^4.2.4"
+  }
+}

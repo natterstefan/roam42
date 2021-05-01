@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "removeComments": true,
+    "noEmit": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+  },
+  /** either exclude cypress _or_ only include sourc files to ensure that Cypress'
+  * and jest's `expect` types don't interfere with each other.
+  *
+  * inspired by:
+  * @see https://github.com/cypress-io/cypress-and-jest-typescript-example/blob/734a38e2451f6cf0341190959a24a4ca40b8ecb7/tsconfig.json
+  */
+  "include": ["common/**/*.js", "ext/**/*.js", "main.js"],
+  "exclude": ["dist", "node_modules", "tmp"]
+}

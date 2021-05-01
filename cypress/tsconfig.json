@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "@testing-library/cypress",
+      "cypress",
+      "cypress-wait-until",
+      "node"
+    ],
+    "isolatedModules": false
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./**/*.d.ts"
+  ]
+}
